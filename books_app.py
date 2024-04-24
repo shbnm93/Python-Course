@@ -10,6 +10,7 @@ while True :
     print("Press L to list all books")
     print("Press F to find a book")
     print("Press D to delete a book")
+    print("Press S to save all books")
     print("Press Q to quit application")
     print(40*"=")
     choice = input("Enter your choice : ").upper()
@@ -23,6 +24,8 @@ while True :
         op.find_book()
     elif choice == 'D':
         op.delete_book()
+    elif choice == 'S':
+        op.save_books()
     elif choice == 'Q':
         break
     else:

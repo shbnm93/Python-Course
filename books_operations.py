@@ -52,3 +52,9 @@ def delete_book():
             break
     else:
         input("\n\nThis book does not exist in books database! Press enter to continue")
+
+
+def save_books():
+    with open("books_database.txt", "w") as database:
+        database.writelines(books)
+        input("Books database has been saved successfully! ")

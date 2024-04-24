@@ -8,5 +8,18 @@
 # data = open("d:/mydata.txt", "r+b")
 
 
-data = open("mydata.txt", "r+")
-print(data.read())
+# data = open("mydata.txt", "a+")
+# # print(data.read())
+# # print(data.readline())
+# # print(data.readline())
+
+# # print(data.readlines())
+# data.seek(5)
+# data.write("\nAli")
+
+# data.close()
+
+
+with open("mydata.txt", "a+") as data:
+    data.seek(5)
+    data.write("\nAli")
