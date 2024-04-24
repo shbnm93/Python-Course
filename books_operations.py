@@ -1,6 +1,10 @@
+from os import system 
+clear = lambda : system("cls")
+
 books = []
 
 def add_book():
+    clear()
     book = {}
     global books
     book["title"] = input("Enter title of the book : ")
@@ -9,8 +13,10 @@ def add_book():
     book["price"] = float(input("Enter price of book : "))
     book["isbn"] = input("Enter ISBN of the book : ")
     books.append(book)
+    input("\nThe book successfully added to database. ")
 
 def list_books():
+    clear()
     for book in books:
         print("Title: ", book["title"])
         print("Author: ", book["author"])
@@ -18,9 +24,11 @@ def list_books():
         print("Price: ", book["price"])
         print("ISBN: ", book["isbn"])
         print("-----------------")
+    input("\nPress enter to back manu ...")
 
 
 def find_book():
+    clear()
     isbn = input("Enter ISBN to search book : ")
     for book in books:
         if book["isbn"] == isbn:
@@ -29,12 +37,13 @@ def find_book():
             print("Pages: ", book["pages"])
             print("Price: ", book["price"])
             print("ISBN: ", book["isbn"])
-            print("-----------------") 
+            input("------------------------------")
             break
     else:
         input("\n\nThis book does not exist in books database! Press enter to continue")
 
 def delete_book():
+    clear()
     isbn = input("Enter ISBN to delete book: ")
     for book in books:
         if book["isbn"] == isbn:

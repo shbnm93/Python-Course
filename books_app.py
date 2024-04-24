@@ -1,9 +1,10 @@
-# V 2.1.0
+# V 2.2.0
 
 import books_operations as op
 
 
 while True :
+    op.clear()
     print(40*"=")
     print("Press A to add a book")
     print("Press L to list all books")
@@ -25,4 +26,4 @@ while True :
     elif choice == 'Q':
         break
     else:
-        print("Wrong choice !")
+        input("\n\nWrong Choice !")
