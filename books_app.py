@@ -1,4 +1,4 @@
-# V 2.2.0
+# V 3.2.0
 
 import books_operations as op
 
@@ -25,7 +25,7 @@ while True :
     elif choice == 'D':
         op.delete_book()
     elif choice == 'S':
-        op.save_books()
+        op.save_json()
     elif choice == 'Q':
         break
     else:

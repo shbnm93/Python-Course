@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Python Programming",
+        "author": "Van Rossum",
+        "pages": 550,
+        "price": 185000.0,
+        "isbn": "10100"
+    },
+    {
+        "title": "SQL Server",
+        "author": "Tennenbam",
+        "pages": 350,
+        "price": 123000.0,
+        "isbn": "10101"
+    },
+    {
+        "title": "C++",
+        "author": "Jafarnezhad",
+        "pages": 600,
+        "price": 130000.0,
+        "isbn": "10102"
+    }
+]

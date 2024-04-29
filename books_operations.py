@@ -55,6 +55,13 @@ def delete_book():
 
 
 def save_books():
-    with open("books_database.txt", "w") as database:
-        database.writelines(books)
-        input("Books database has been saved successfully! ")
+    from pickle import dump
+    with open("books_database.info", "wb") as database:
+        dump(books, database)
+        input("\nBooks database has been saved successfully! ")
+
+def save_json():
+    from json import dump
+    with open("books_database.json", "w") as database:
+        dump(books, database, indent=4) 
+        input("\nBooks database has been saved successfully! ")
