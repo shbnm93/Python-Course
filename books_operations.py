@@ -1,7 +1,9 @@
 from os import system 
 clear = lambda : system("cls")
 
-books = []
+from json import load
+with open("books_database.json", "r") as database:
+    books = load(database)
 
 def add_book():
     clear()

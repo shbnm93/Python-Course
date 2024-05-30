@@ -19,5 +19,12 @@
         "pages": 600,
         "price": 130000.0,
         "isbn": "10102"
+    },
+    {
+        "title": "Physics",
+        "author": "Holiday",
+        "pages": 750,
+        "price": 265000.0,
+        "isbn": "10103"
     }
 ]
